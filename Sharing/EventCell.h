@@ -12,6 +12,7 @@
 #import "AppUtility.h"
 #import "UIFont+AppFont.h"
 #import "UIColor+AppColor.h"
+#import "UILabel+VerticalAlign.h"
 
 @interface EventCell : UITableViewCell
 - (void) setContents:(NSDictionary *)eventDic;

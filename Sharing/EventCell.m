@@ -29,8 +29,9 @@
     
     CGFloat posX = CGRectGetMaxX(userNameLbl.frame) + 10;
     NSString *eventName = [eventDic valueForKey:KEY_EVENTNAME];
-    UILabel *eventNameLbl = [AppUtility createLabelWarpping:eventName x:posX y:10 w:50 h:50 font:[UIFont fontBig] textColor:nil bkColor:nil align:NSTextAlignmentCenter];
-    [self addSubview:userNameLbl];
+    UILabel *eventNameLbl = [AppUtility createLabelWarpping:eventName x:posX y:10 w:screenWidth - posX - 10 h:60 font:[UIFont fontBig] textColor:nil bkColor:nil align:NSTextAlignmentLeft];
+    [eventNameLbl alignTop];
+    [self addSubview:eventNameLbl];
     
     self.height = 90;
     

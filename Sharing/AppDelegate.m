@@ -17,8 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.157 green:0.157 blue:1 alpha:1];
-    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].barTintColor = [UIColor mainColor];
+//    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UITabBar appearance].barTintColor = [UIColor mainColor];
     
     UINavigationController *controller = [[UINavigationController alloc]initWithRootViewController:[[MyTabController alloc]init]];
     self.window.rootViewController = controller;

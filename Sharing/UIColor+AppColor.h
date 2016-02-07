@@ -9,18 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (APPExtention)
-+ (UIColor *)shuftiNavColor;
-+ (UIColor *)shuftiStarredColor;
-+ (UIColor *)shuftiLightColor;
-+ (UIColor *)shuftiNameColor;
-+ (UIColor *)shuftiQMarkColor;
-+ (UIColor *)shuftiAMarkColor;
-+ (UIColor *)shuftiQuestionColor;
-+ (UIColor *)shuftiJobTypeProjectColor;
-+ (UIColor *)shuftiJobTypeTaskColor;
-+ (UIColor *)shuftiTabSelectColor;
-+ (UIColor *)shuftiTabNormalColor;
-+ (UIColor *)shuftiBasicColor;
-+ (UIColor *)shuftiWebViewColor;
-+ (UIColor *)shuftiConfirmColor;
++ (UIColor *)mainColor;
 @end

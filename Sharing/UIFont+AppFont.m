@@ -17,7 +17,7 @@
 
 + (UIFont *)fontBig
 {
-    return [UIFont fontWithName:@"TamilSangamMN" size:18];
+    return [UIFont fontWithName:@"TamilSangamMN" size:16];
 }
 
 @end

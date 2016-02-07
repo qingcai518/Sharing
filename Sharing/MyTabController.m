@@ -36,10 +36,6 @@
     vc4.tabBarItem.image=[UIImage imageNamed:@"profile.png"];
     
     self.viewControllers = @[vc1, vc2, vc3, vc4];
-    
-    [UINavigationBar appearance].barTintColor = [UIColor whiteColor];
-//    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
-//    [UITabBar appearance].barTintColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

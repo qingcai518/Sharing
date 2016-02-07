@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		558450601C66E5B500208F75 /* UILabel+VerticalAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584505F1C66E5B500208F75 /* UILabel+VerticalAlign.m */; };
 		CE7672951C6499A0002AE3F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7672941C6499A0002AE3F8 /* main.m */; };
 		CE7672981C6499A0002AE3F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7672971C6499A0002AE3F8 /* AppDelegate.m */; };
 		CE7672A01C6499A0002AE3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE76729F1C6499A0002AE3F8 /* Assets.xcassets */; };
@@ -45,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5584505E1C66E5B500208F75 /* UILabel+VerticalAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+VerticalAlign.h"; sourceTree = "<group>"; };
+		5584505F1C66E5B500208F75 /* UILabel+VerticalAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+VerticalAlign.m"; sourceTree = "<group>"; };
 		CE7672901C6499A0002AE3F8 /* Sharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7672941C6499A0002AE3F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE7672961C6499A0002AE3F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 				CE7673021C64A267002AE3F8 /* AppConstants.m */,
 				CE7673061C64A86A002AE3F8 /* AppUtility.h */,
 				CE7673071C64A86A002AE3F8 /* AppUtility.m */,
+				5584505E1C66E5B500208F75 /* UILabel+VerticalAlign.h */,
+				5584505F1C66E5B500208F75 /* UILabel+VerticalAlign.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				TargetAttributes = {
 					CE76728F1C6499A0002AE3F8 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = M9F5QE5W4U;
 					};
 				};
 			};
@@ -365,6 +371,7 @@
 				CE7672F51C64A049002AE3F8 /* SDWebImagePrefetcher.m in Sources */,
 				CE7672B91C649AFA002AE3F8 /* MessageViewController.m in Sources */,
 				CE7672FC1C64A049002AE3F8 /* UIView+WebCacheOperation.m in Sources */,
+				558450601C66E5B500208F75 /* UILabel+VerticalAlign.m in Sources */,
 				CE7672ED1C64A049002AE3F8 /* MKAnnotationView+WebCache.m in Sources */,
 				CE7672F91C64A049002AE3F8 /* UIImage+WebP.m in Sources */,
 				CE76730E1C64AC23002AE3F8 /* UIFont+AppFont.m in Sources */,
@@ -485,11 +492,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Sharing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kaka.org.Sharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -497,11 +507,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Sharing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kaka.org.Sharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -524,6 +537,7 @@
 				CE7672A91C6499A0002AE3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

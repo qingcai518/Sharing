@@ -20,12 +20,12 @@
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     
-    UILabel *title = [[UILabel alloc]initWithFrame:CGRectMake(10, 100, width - 20, 60)];
-    title.font = [UIFont fontWithName:@"Verdana" size:40];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectZero];
+    title.font = [UIFont boldSystemFontOfSize:16.0];
     title.textColor = [UIColor whiteColor];
-    title.text = @"Sharing";
-    title.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:title];
+    title.text = @"候補一覧";
+    [title sizeToFit];
+    self.navigationItem.titleView = title;
     
     // dummy
     [self setData];
