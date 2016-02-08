@@ -44,6 +44,14 @@
 		CE76730D1C64AC23002AE3F8 /* UIColor+AppColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76730A1C64AC23002AE3F8 /* UIColor+AppColor.m */; };
 		CE76730E1C64AC23002AE3F8 /* UIFont+AppFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76730C1C64AC23002AE3F8 /* UIFont+AppFont.m */; };
 		CE86D7C21C681ED700253E74 /* BirthdayParty@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE86D7C11C681ED700253E74 /* BirthdayParty@2x.jpg */; };
+		CE86D7D61C683AC500253E74 /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86D7C61C683AC500253E74 /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m */; };
+		CE86D7D71C683AC500253E74 /* DragTableFooterView_ot.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86D7C91C683AC500253E74 /* DragTableFooterView_ot.m */; };
+		CE86D7D81C683AC500253E74 /* DragTableGestureObserver_ot.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86D7CB1C683AC500253E74 /* DragTableGestureObserver_ot.m */; };
+		CE86D7D91C683AC500253E74 /* DragTableHeaderView_ot.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86D7CD1C683AC500253E74 /* DragTableHeaderView_ot.m */; };
+		CE86D7DA1C683AC500253E74 /* UIScrollView+DragTableSafeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86D7CF1C683AC500253E74 /* UIScrollView+DragTableSafeAnimation.m */; };
+		CE86D7DB1C683AC500253E74 /* UITableView+DragLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86D7D21C683AC500253E74 /* UITableView+DragLoad.m */; };
+		CE86D7DC1C683AC500253E74 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CE86D7D41C683AC500253E74 /* blueArrow.png */; };
+		CE86D7DD1C683AC500253E74 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE86D7D51C683AC500253E74 /* blueArrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +123,21 @@
 		CE76730B1C64AC23002AE3F8 /* UIFont+AppFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+AppFont.h"; sourceTree = "<group>"; };
 		CE76730C1C64AC23002AE3F8 /* UIFont+AppFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+AppFont.m"; sourceTree = "<group>"; };
 		CE86D7C11C681ED700253E74 /* BirthdayParty@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BirthdayParty@2x.jpg"; sourceTree = "<group>"; };
+		CE86D7C51C683AC500253E74 /* ComOpenThreadOTScreenshotHelperSwizzleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComOpenThreadOTScreenshotHelperSwizzleHelper.h; sourceTree = "<group>"; };
+		CE86D7C61C683AC500253E74 /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComOpenThreadOTScreenshotHelperSwizzleHelper.m; sourceTree = "<group>"; };
+		CE86D7C71C683AC500253E74 /* DragTableDragState_ot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragTableDragState_ot.h; sourceTree = "<group>"; };
+		CE86D7C81C683AC500253E74 /* DragTableFooterView_ot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragTableFooterView_ot.h; sourceTree = "<group>"; };
+		CE86D7C91C683AC500253E74 /* DragTableFooterView_ot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragTableFooterView_ot.m; sourceTree = "<group>"; };
+		CE86D7CA1C683AC500253E74 /* DragTableGestureObserver_ot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragTableGestureObserver_ot.h; sourceTree = "<group>"; };
+		CE86D7CB1C683AC500253E74 /* DragTableGestureObserver_ot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragTableGestureObserver_ot.m; sourceTree = "<group>"; };
+		CE86D7CC1C683AC500253E74 /* DragTableHeaderView_ot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragTableHeaderView_ot.h; sourceTree = "<group>"; };
+		CE86D7CD1C683AC500253E74 /* DragTableHeaderView_ot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragTableHeaderView_ot.m; sourceTree = "<group>"; };
+		CE86D7CE1C683AC500253E74 /* UIScrollView+DragTableSafeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DragTableSafeAnimation.h"; sourceTree = "<group>"; };
+		CE86D7CF1C683AC500253E74 /* UIScrollView+DragTableSafeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DragTableSafeAnimation.m"; sourceTree = "<group>"; };
+		CE86D7D11C683AC500253E74 /* UITableView+DragLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+DragLoad.h"; sourceTree = "<group>"; };
+		CE86D7D21C683AC500253E74 /* UITableView+DragLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+DragLoad.m"; sourceTree = "<group>"; };
+		CE86D7D41C683AC500253E74 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		CE86D7D51C683AC500253E74 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +251,7 @@
 		CE7672CA1C64A049002AE3F8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				CE86D7C31C683AC500253E74 /* UITableViewDragLoad */,
 				CE7672CB1C64A049002AE3F8 /* SDWebImage */,
 			);
 			path = Library;
@@ -290,6 +314,52 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		CE86D7C31C683AC500253E74 /* UITableViewDragLoad */ = {
+			isa = PBXGroup;
+			children = (
+				CE86D7C41C683AC500253E74 /* PrivateClass */,
+				CE86D7D01C683AC500253E74 /* PublicClass */,
+				CE86D7D31C683AC500253E74 /* Resources */,
+			);
+			path = UITableViewDragLoad;
+			sourceTree = "<group>";
+		};
+		CE86D7C41C683AC500253E74 /* PrivateClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE86D7C51C683AC500253E74 /* ComOpenThreadOTScreenshotHelperSwizzleHelper.h */,
+				CE86D7C61C683AC500253E74 /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m */,
+				CE86D7C71C683AC500253E74 /* DragTableDragState_ot.h */,
+				CE86D7C81C683AC500253E74 /* DragTableFooterView_ot.h */,
+				CE86D7C91C683AC500253E74 /* DragTableFooterView_ot.m */,
+				CE86D7CA1C683AC500253E74 /* DragTableGestureObserver_ot.h */,
+				CE86D7CB1C683AC500253E74 /* DragTableGestureObserver_ot.m */,
+				CE86D7CC1C683AC500253E74 /* DragTableHeaderView_ot.h */,
+				CE86D7CD1C683AC500253E74 /* DragTableHeaderView_ot.m */,
+				CE86D7CE1C683AC500253E74 /* UIScrollView+DragTableSafeAnimation.h */,
+				CE86D7CF1C683AC500253E74 /* UIScrollView+DragTableSafeAnimation.m */,
+			);
+			path = PrivateClass;
+			sourceTree = "<group>";
+		};
+		CE86D7D01C683AC500253E74 /* PublicClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE86D7D11C683AC500253E74 /* UITableView+DragLoad.h */,
+				CE86D7D21C683AC500253E74 /* UITableView+DragLoad.m */,
+			);
+			path = PublicClass;
+			sourceTree = "<group>";
+		};
+		CE86D7D31C683AC500253E74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE86D7D41C683AC500253E74 /* blueArrow.png */,
+				CE86D7D51C683AC500253E74 /* blueArrow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,7 +420,9 @@
 			files = (
 				CE7672A31C6499A0002AE3F8 /* LaunchScreen.storyboard in Resources */,
 				CE7673051C64A68E002AE3F8 /* placeholder@2x.png in Resources */,
+				CE86D7DD1C683AC500253E74 /* blueArrow@2x.png in Resources */,
 				CE7672C61C649CDB002AE3F8 /* profile@2x.png in Resources */,
+				CE86D7DC1C683AC500253E74 /* blueArrow.png in Resources */,
 				CE7672A01C6499A0002AE3F8 /* Assets.xcassets in Resources */,
 				CE7672C81C649D79002AE3F8 /* message@2x.png in Resources */,
 				CE7672C01C649C43002AE3F8 /* football@2x.png in Resources */,
@@ -373,6 +445,7 @@
 				CE7672F61C64A049002AE3F8 /* UIButton+WebCache.m in Sources */,
 				CE7672F81C64A049002AE3F8 /* UIImage+MultiFormat.m in Sources */,
 				CE7672F51C64A049002AE3F8 /* SDWebImagePrefetcher.m in Sources */,
+				CE86D7D81C683AC500253E74 /* DragTableGestureObserver_ot.m in Sources */,
 				CE7672B91C649AFA002AE3F8 /* MessageViewController.m in Sources */,
 				CE7672FC1C64A049002AE3F8 /* UIView+WebCacheOperation.m in Sources */,
 				558450601C66E5B500208F75 /* UILabel+VerticalAlign.m in Sources */,
@@ -380,15 +453,20 @@
 				CE7672F91C64A049002AE3F8 /* UIImage+WebP.m in Sources */,
 				CE76730E1C64AC23002AE3F8 /* UIFont+AppFont.m in Sources */,
 				CE7673081C64A86A002AE3F8 /* AppUtility.m in Sources */,
+				CE86D7D91C683AC500253E74 /* DragTableHeaderView_ot.m in Sources */,
+				CE86D7DB1C683AC500253E74 /* UITableView+DragLoad.m in Sources */,
 				CE7672AC1C649A0F002AE3F8 /* MyTabController.m in Sources */,
 				CE7672F31C64A049002AE3F8 /* SDWebImageDownloaderOperation.m in Sources */,
+				CE86D7D71C683AC500253E74 /* DragTableFooterView_ot.m in Sources */,
 				CE7672F11C64A049002AE3F8 /* SDWebImageDecoder.m in Sources */,
 				CE7672B61C649AE8002AE3F8 /* NearbyViewController.m in Sources */,
 				CE7672FA1C64A049002AE3F8 /* UIImageView+HighlightedWebCache.m in Sources */,
+				CE86D7DA1C683AC500253E74 /* UIScrollView+DragTableSafeAnimation.m in Sources */,
 				CE7672EE1C64A049002AE3F8 /* NSData+ImageContentType.m in Sources */,
 				CE7672FF1C64A0D7002AE3F8 /* EventCell.m in Sources */,
 				CE7672F21C64A049002AE3F8 /* SDWebImageDownloader.m in Sources */,
 				CE7672B01C649A65002AE3F8 /* EventViewController.m in Sources */,
+				CE86D7D61C683AC500253E74 /* ComOpenThreadOTScreenshotHelperSwizzleHelper.m in Sources */,
 				CE7672BC1C649B0D002AE3F8 /* ProfileViewController.m in Sources */,
 				CE7672981C6499A0002AE3F8 /* AppDelegate.m in Sources */,
 				CE7672F41C64A049002AE3F8 /* SDWebImageManager.m in Sources */,

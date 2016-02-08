@@ -20,12 +20,12 @@
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     
-    UILabel *title = [[UILabel alloc] initWithFrame:CGRectZero];
-    title.font = [UIFont boldSystemFontOfSize:16.0];
-    title.textColor = [UIColor whiteColor];
-    title.text = @"候補一覧";
-    [title sizeToFit];
-    self.navigationItem.titleView = title;
+//    UILabel *title = [[UILabel alloc] initWithFrame:CGRectZero];
+//    title.font = [UIFont boldSystemFontOfSize:16.0];
+//    title.text = @"候補一覧";
+//    [title sizeToFit];
+//    self.navigationItem.titleView = title;
+    self.navigationItem.title = @"最近活动";
     
     // dummy
     [self setData];
@@ -37,12 +37,14 @@
     imgView.clipsToBounds = YES;
     [self.view addSubview:imgView];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, img.size.height, width, height - img.size.height - CGRectGetHeight(self.tabBarController.tabBar.frame))];
-    tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    tableView.tableFooterView = [[UIView alloc] init];
-    [self.view addSubview:tableView];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, img.size.height, width, height - img.size.height - CGRectGetHeight(self.tabBarController.tabBar.frame))];
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    [self.view addSubview:self.tableView];
+    
+    [self.tableView setDragDelegate:self refreshDatePermanentKey:@"EventList"];
 }
 
 // dummy
@@ -99,6 +101,38 @@
 {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - Drag delegate methods
+
+- (void)dragTableDidTriggerRefresh:(UITableView *)tableView
+{
+    NSNumber *value = [NSNumber numberWithBool:YES];
+    [self performSelector:@selector(onRefresh) withObject:value afterDelay:0.5f];
+}
+
+- (void)dragTableRefreshCanceled:(UITableView *)tableView
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(stopRefresh) object:nil];
+}
+
+- (void)dragTableDidTriggerLoadMore:(UITableView *)tableView
+{
+    NSNumber *value = [NSNumber numberWithBool:NO];
+    [self performSelector:@selector(onLoadMore) withObject:value afterDelay:0.5f];
+}
+
+- (void)dragTableLoadMoreCanceled:(UITableView *)tableView
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(stopLoadMore) object:nil];
+}
+
+- (void) onRefresh {
+    [self.tableView finishRefresh];
+}
+
+- (void) onLoadMore {
+    [self.tableView finishLoadMore];
 }
 
 @end

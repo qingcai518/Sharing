@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "EventCell.h"
+#import "UITableView+DragLoad.h"
 
-@interface EventViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface EventViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UITableViewDragLoadDelegate>
 @property (nonatomic, strong) NSArray* contents;
+@property (nonatomic, strong) UITableView *tableView;
 @end

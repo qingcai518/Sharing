@@ -26,4 +26,5 @@ NSString * const TYPE_TRAVEL = @"travel";
 NSString * const TYPE_SOCCER = @"soccer";
 NSString * const TYPE_BASKET = @"basket";
 NSString * const TYPE_TENNIS = @"tennis";
+
 @end

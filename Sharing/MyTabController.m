@@ -35,7 +35,12 @@
     vc4.tabBarItem.title=@"我的";
     vc4.tabBarItem.image=[UIImage imageNamed:@"profile.png"];
     
-    self.viewControllers = @[vc1, vc2, vc3, vc4];
+    UINavigationController *nc1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+    UINavigationController *nc2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+    UINavigationController *nc3 = [[UINavigationController alloc] initWithRootViewController:vc3];
+    UINavigationController *nc4 = [[UINavigationController alloc] initWithRootViewController:vc4];
+    
+    self.viewControllers = @[nc1, nc2, nc3, nc4];
 }
 
 - (void)didReceiveMemoryWarning {
