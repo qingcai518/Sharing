@@ -30,7 +30,14 @@
     // dummy
     [self setData];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+    UIImage *img = [UIImage imageNamed:@"BirthdayParty.jpg"];
+    UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, width, img.size.height)];
+    imgView.image = img;
+    imgView.contentMode = UIViewContentModeScaleAspectFill;
+    imgView.clipsToBounds = YES;
+    [self.view addSubview:imgView];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, img.size.height, width, height - img.size.height - CGRectGetHeight(self.tabBarController.tabBar.frame))];
     tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     tableView.dataSource = self;
     tableView.delegate = self;

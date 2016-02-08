@@ -43,6 +43,7 @@
 		CE7673081C64A86A002AE3F8 /* AppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7673071C64A86A002AE3F8 /* AppUtility.m */; };
 		CE76730D1C64AC23002AE3F8 /* UIColor+AppColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76730A1C64AC23002AE3F8 /* UIColor+AppColor.m */; };
 		CE76730E1C64AC23002AE3F8 /* UIFont+AppFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76730C1C64AC23002AE3F8 /* UIFont+AppFont.m */; };
+		CE86D7C21C681ED700253E74 /* BirthdayParty@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE86D7C11C681ED700253E74 /* BirthdayParty@2x.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		CE76730A1C64AC23002AE3F8 /* UIColor+AppColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AppColor.m"; sourceTree = "<group>"; };
 		CE76730B1C64AC23002AE3F8 /* UIFont+AppFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+AppFont.h"; sourceTree = "<group>"; };
 		CE76730C1C64AC23002AE3F8 /* UIFont+AppFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+AppFont.m"; sourceTree = "<group>"; };
+		CE86D7C11C681ED700253E74 /* BirthdayParty@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BirthdayParty@2x.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 		CE7672BE1C649C43002AE3F8 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CE86D7C11C681ED700253E74 /* BirthdayParty@2x.jpg */,
 				CE7673041C64A68E002AE3F8 /* placeholder@2x.png */,
 				CE7672C71C649D79002AE3F8 /* message@2x.png */,
 				CE7672C51C649CDB002AE3F8 /* profile@2x.png */,
@@ -318,7 +321,7 @@
 				TargetAttributes = {
 					CE76728F1C6499A0002AE3F8 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = M9F5QE5W4U;
+						DevelopmentTeam = 2K794A54P5;
 					};
 				};
 			};
@@ -352,6 +355,7 @@
 				CE7672C81C649D79002AE3F8 /* message@2x.png in Resources */,
 				CE7672C01C649C43002AE3F8 /* football@2x.png in Resources */,
 				CE7672C21C649C4A002AE3F8 /* nearby@2x.png in Resources */,
+				CE86D7C21C681ED700253E74 /* BirthdayParty@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
